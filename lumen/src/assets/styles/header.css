@@ -1,0 +1,34 @@
+/* Basic styling for header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  font-family: "Poppins";
+  color: black;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+.search-box{
+  padding: 10px 20px;
+  outline: none;
+  border-radius: 6px;
+  border: none;
+  
+}
+.search-box:hover{
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+}
