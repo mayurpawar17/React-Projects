@@ -1,55 +1,52 @@
 /* Styling for the note card */
 .note-card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 10px;
-    width: 200px;
-    background-color: #fff;
-    transition: transform 0.2s ease-in-out;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  height: fit-content;
+  font-family: "Poppins";
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+
+.note-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.note-content {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .note-card {
+    padding: 10px;
+    font-size: 0.9rem;
   }
-  
-  .note-card:hover {
-    transform: scale(1.05);
-  }
-  
+
   .note-title {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #333;
+    font-size: 1.25rem;
   }
-  
+
   .note-content {
-    font-size: 1rem;
-    color: #555;
+    font-size: 0.9rem;
   }
-  
-  /* Responsive styles */
-  @media (max-width: 768px) {
-    .note-card {
-      padding: 15px;
-      font-size: 0.9rem;
-    }
-  
-    .note-title {
-      font-size: 1.25rem;
-    }
-  
-    .note-content {
-      font-size: 0.9rem;
-    }
+}
+
+@media (max-width: 480px) {
+  .note-card {
+    padding: 10px;
   }
-  
-  @media (max-width: 480px) {
-    .note-card {
-      padding: 10px;
-    }
-  
-    .note-title {
-      font-size: 1.1rem;
-    }
-  
-    .note-content {
-      font-size: 0.8rem;
-    }
+
+  .note-title {
+    font-size: 1.1rem;
   }
+
+  .note-content {
+    font-size: 0.8rem;
+  }
+}

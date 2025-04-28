@@ -14,21 +14,20 @@
   width: 100px;
   height: auto;
 }
-.search-box{
+.search-box {
   padding: 10px 20px;
   outline: none;
   border-radius: 6px;
   border: none;
-  
 }
-.search-box:hover{
+.search-box:hover {
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
 
 /* Responsive styles */
 @media (max-width: 768px) {
   .header {
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
   }
 }
