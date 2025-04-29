@@ -58,16 +58,6 @@ const Home = () => {
       title: "Gardening",
       content: "Nurture plants and enjoy connecting with nature.",
     },
-    {
-      id: 10,
-      title: "Gardening",
-      content: "Nurture plants and enjoy connecting with nature.",
-    },
-    {
-      id: 10,
-      title: "Gardening",
-      content: "Nurture plants and enjoy connecting with nature.",
-    },
   ];
   return (
     <div className="home-container">
