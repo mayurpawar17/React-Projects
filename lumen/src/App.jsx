@@ -1,12 +1,15 @@
 import React from "react";
 import Home from "./pages/Home";
-import { Header } from "./components/Header";
+import { Route, Routes } from "react-router-dom";
+import OnBoardingPage from "./pages/OnBoardingPage";
 
 const App = () => {
   return (
     <>
-      <Header />
-      <Home />
+      <Routes>
+        <Route path="/" element={<OnBoardingPage />} />
+        <Route path="/lumenNote" element={<Home />} />
+      </Routes>
     </>
   );
 };

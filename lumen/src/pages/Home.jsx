@@ -60,11 +60,14 @@ const Home = () => {
     },
   ];
   return (
-    <div className="home-container">
-      {notes.map((note) => (
-        <NoteCard key={note.id} title={note.title} content={note.content} />
-      ))}
-    </div>
+    <>
+      <Header />
+      <div className="home-container">
+        {notes.map((note) => (
+          <NoteCard key={note.id} title={note.title} content={note.content} />
+        ))}
+      </div>{" "}
+    </>
   );
 };
 
